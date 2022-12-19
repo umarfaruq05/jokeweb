@@ -48,3 +48,9 @@ body {
     color: white;
     cursor: pointer;
 }
+
+@media (max-width: 660px) {
+    .first {
+        width: 95%;
+    }
+}

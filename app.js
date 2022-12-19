@@ -1,6 +1,6 @@
 const express = require("express");
 const https = require("https");
-const port  = 6700;
+const port  = process.env.PORT || 6700;
 
 
 const app = express();
@@ -24,7 +24,12 @@ app.post("/", (req,res) => {
             res.send(`
             <!DOCTYPE html>
             <html lang="en">
-            <head> <title>Jokes API</title></head>
+            <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Jokes API</title>
+            </head>
             <style>
             body {
                 margin: 0;
@@ -72,6 +77,11 @@ app.post("/", (req,res) => {
                 color: white;
                 cursor: pointer;
             }
+            @media (max-width: 660px) {
+                .first {
+                    width: 95%;
+                }
+            }
             </style>
             <body>
                 <header><h1 class="txt-center txt-red">Jokes</h1></header>
@@ -82,7 +92,10 @@ app.post("/", (req,res) => {
                                 Here's your joke!!!
                                 <div class="third">
                                    Joke Question: ${jokeQuestion} <br>
-                                   Joke Answer: ${jokeAnswer}.
+                                   Joke Answer: ${jokeAnswer}. <br>
+                                   <form action="/" method="post">
+                                    <button class="btn" type="submit">Get Joke</button>
+                                    </form>
                                 </div>
                             </h2>
                         </div>

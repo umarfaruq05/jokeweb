@@ -1,0 +1,50 @@
+@font-face {
+    font-family: Lato-light;
+    src: url(./Lato-Light.ttf);
+}
+
+body {
+    margin: 0;
+    /* color: black; */
+    font-family: Lato-light;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.txt-red {
+    color: #FF1E1E;
+}
+
+.first {
+    background-color: #497174;
+    width: 65%;
+    margin: auto;
+    padding: 30px 0;
+    border: solid 20px #D6E4E5;
+}
+
+.second {
+    background-color: #D6E4E5;
+    width: 85%;
+    margin: 5px auto;
+    padding: 15px 0;
+}
+
+.third {
+    width: 80%;
+    margin: 10px auto;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.btn {
+    background-color: #497174;
+    width: 80px;
+    height: 40px;
+    border: 0;
+    outline: 0;
+    color: white;
+    cursor: pointer;
+}

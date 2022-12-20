@@ -71,8 +71,8 @@ app.post("/", (req,res) => {
             
             .btn {
                 background-color: #497174;
-                width: 80px;
-                height: 40px;
+                width: 100px;
+                height: 60px;
                 border: 0;
                 outline: 0;
                 color: white;

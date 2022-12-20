@@ -23,6 +23,7 @@ body {
     margin: auto;
     padding: 30px 0;
     border: solid 20px #D6E4E5;
+    box-sizing: border-box;
 }
 
 .second {

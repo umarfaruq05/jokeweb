@@ -51,6 +51,7 @@ app.post("/", (req,res) => {
                 margin: auto;
                 padding: 30px 0;
                 border: solid 20px #D6E4E5;
+                box-sizing: border-box;
             }
             
             .second {
@@ -94,7 +95,7 @@ app.post("/", (req,res) => {
                                    Joke Question: ${jokeQuestion} <br>
                                    Joke Answer: ${jokeAnswer}. <br>
                                    <form action="/" method="post">
-                                    <button class="btn" type="submit">Get Joke</button>
+                                    <button class="btn" type="submit">Get Another Joke</button>
                                     </form>
                                 </div>
                             </h2>
